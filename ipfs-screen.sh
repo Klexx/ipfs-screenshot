@@ -10,7 +10,7 @@ then
   screencapture -t jpg -i ~/.ipfs-screen/$file
   clipboard_command="pbcopy"
 else
-  gnome-screenshot -a -f ~/.ipfs-screen/$file
+  xfce4-screenshooter -r -s ~/.ipfs-screen/$file
 fi
 
 hash_log=$(ipfs add ~/.ipfs-screen/$file)
